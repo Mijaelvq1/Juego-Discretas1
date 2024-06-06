@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Ruleta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="ruleta-container">
+            <div class="ruleta" id="ruleta">
+                <div class="segmento" style="--i:0;">1</div>
+                <div class="segmento" style="--i:1;">2</div>
+                <div class="segmento" style="--i:2;">3</div>
+                <div class="segmento" style="--i:3;">4</div>
+                <div class="segmento" style="--i:4;">5</div>
+                <div class="segmento" style="--i:5;">6</div>
+                <div class="segmento" style="--i:6;">7</div>
+                <div class="segmento" style="--i:7;">8</div>
+                <div class="segmento" style="--i:8;">9</div>
+                <div class="segmento" style="--i:9;">10</div>
+            </div>
+            <button id="girarBtn">Girar</button>
+        </div>
+        <div id="preguntaContainer" class="pregunta-container">
+            <p id="preguntaTexto"></p>
+            <button id="opcion1" class="opcion"></button>
+            <button id="opcion2" class="opcion"></button>
+            <button id="opcion3" class="opcion"></button>
+            <button id="opcion4" class="opcion"></button>
+            <div id="timer">Tiempo restante: 30s</div>
+        </div>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
